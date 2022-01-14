@@ -11,6 +11,8 @@
     box-sizing: border-box;
 }
 
+/*header*/
+
 header{
     background-image: url(../img/Copia\ de\ fondobanner.png);
     height: 100vh;
@@ -31,12 +33,14 @@ header div.nav img{
 header div.nav{
     display: flex;
     height: 15vh;
+    width: 100%;/*sacarlo si no quiero que quede arriba pegado*/
     justify-content: space-between;
     align-items: center;
     padding-right: 15px;
     padding-left: 15px;
     background-color: rgba(163, 159, 161, 0.6);
-    
+    position: fixed;/*sacarlo si no lo quiero pegado*/
+    top: 0;/*sacarlo si no lo quiero pegado*/
 }
 
 header div.nav nav ul{
@@ -71,6 +75,7 @@ header div.buttons{
     display: flex;
     justify-content: space-between;
     width: 100vh;
+    margin-top: 50vh;/*sacarlo si no lo quiero pegado*/
 }
 
 header div.buttons div{
@@ -100,6 +105,113 @@ header div.buttons div a{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
+
+/*about us*/
+
+main div.aboutus{
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main div.aboutus video{
+    width: 598px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+main div.aboutus div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main div.aboutus div h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;   
+}
+
+main div.aboutus div p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+/*propuestas*/
+
+main div.propuestas{
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+main div.propuestas h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+main div.propuestas div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main div.propuestas div article{
+    position: relative;
+}
+
+main div.propuestas div article img{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.25);
+    border: 2px solid #FFFFFF;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+main div.propuestas div article h3{
+    position: absolute;
+    bottom: 80px;
+    left: 35%;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+main div.propuestas div article img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+/*manuales de uso*/
+
+
+
+
+
+
+
 
 
 
