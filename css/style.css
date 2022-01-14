@@ -106,10 +106,16 @@ header div.buttons div a{
     font-weight: 400;
 }
 
+/*main*/
+
+main{
+    background-image: url(../img/fondo.png);
+}
+
 /*about us*/
 
 main div.aboutus{
-    margin-top: 25vh;
+    padding-top: 25vh;
     display: flex;
     justify-content: center;
     gap: 20px;
