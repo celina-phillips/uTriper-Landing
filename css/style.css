@@ -1,0 +1,112 @@
+:root{
+    --naranja: #E39348;
+    --verde: #A6ba62;
+    --amarillo: #F2c35c;
+    --celeste: #9bc2d1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(../img/Copia\ de\ fondobanner.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50vh;
+}
+
+header div.nav img{
+    width: 158px;
+    height: 55px;
+}
+
+header div.nav{
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: rgba(163, 159, 161, 0.6);
+    
+}
+
+header div.nav nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header div.nav nav ul li{
+    list-style: none;
+}
+
+header div.nav nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+header div.nav nav ul li a:hover{
+    opacity: 0.8;
+    font-size: 17px;  
+}
+
+header div.buttons{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100vh;
+}
+
+header div.buttons div{
+    background-color: white ;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(163, 159, 161, 0.5);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+header div.buttons div:hover{
+    background-color:rgba(163, 159, 161, 0.8);
+}
+
+header div.buttons div a{
+    text-decoration: none;
+    color: var(--naranja);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
