@@ -21,8 +21,10 @@ header{
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 50vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /*padding-bottom: 50vh;*/
 }
 
 header div.nav img{
@@ -32,25 +34,37 @@ header div.nav img{
 
 header div.nav{
     display: flex;
-    height: 15vh;
+    height: 70px;
     width: 100%;/*sacarlo si no quiero que quede arriba pegado*/
     justify-content: space-between;
     align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
     background-color: rgba(163, 159, 161, 0.6);
     position: fixed;/*sacarlo si no lo quiero pegado*/
     top: 0;/*sacarlo si no lo quiero pegado*/
+    z-index: 1;
+}
+
+header div.nav nav{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 header div.nav nav ul{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 header div.nav nav ul li{
     list-style: none;
+    height: 40px;/*a partir de aca para abajo sacarlo si quiero sacar el white fondo de los botones*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 header div.nav nav ul li a{
@@ -70,18 +84,17 @@ header div.nav nav ul li a:hover{
     font-size: 17px;  
 }
 
-header div.buttons{
+/*header div.buttons{
     align-self: center;
     display: flex;
     justify-content: space-between;
     width: 100vh;
     margin-top: 50vh;/*sacarlo si no lo quiero pegado*/
-}
 
-header div.buttons div{
+header div.nav nav div{
     background-color: white ;
     height: 40px;
-    width: 120px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,15 +108,35 @@ header div.buttons div{
     -o-transition: all 1s ease;
 }
 
-header div.buttons div:hover{
+header div.nav nav div:hover{
     background-color:rgba(163, 159, 161, 0.8);
 }
 
-header div.buttons div a{
+header div.nav nav div a{
     text-decoration: none;
     color: var(--naranja);
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+header h1{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 35px;
+}
+
+header div.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(227, 147, 72, 0.6);
+    height: 40px;
+    width: 500px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 /*main*/
