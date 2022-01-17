@@ -337,22 +337,184 @@ main div.propuestas div article img:hover{
     cursor: pointer;
 }
 
-/*manuales de uso*/
+/*moods*/
 
+main div.moods{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
 
+main div.moods h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
 
+main div.moods div.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;/*cambiar y poner menos en version mobile*/
+    margin-right: 40px;
+    margin-left: 40px;
+}
 
+main div.moods div.articles article{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
 
+main div.moods div.articles article i{
+    font-size: 30px;
+}
 
+i#nature{
+    color: var(--naranja);
+}
 
+i#drink{
+    color: var(--verde);
+}
 
+i#food{
+    color: var(--amarillo);
+}
 
+i#sport{
+    color: var(--celeste);
+}
 
+i#music{
+    color: var(--naranja);
+}
 
+main div.moods div.articles article h3{
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
 
+main div.moods div.articles article p{
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
 
+/*footer*/
 
+footer div.contactanos{
+    background-color: var(--naranja);
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+footer div.contactanos h2{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+footer div.contactanos form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    align-items: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+footer div.contactanos form label{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--naranja);
+    padding-top: 20px;
+}
+
+footer div.contactanos form label input{
+    width: 250px;
+    height: 40px;
+    background-color: rgba(163, 159, 161, 0.6);
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: center;
+}
+
+footer div.contactanos form input{
+    height: 90px;
+    width: 300px;
+    background-color: rgba(163, 159, 161, 0.6);
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: center;
+}
+
+footer div.social{
+    height: 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(163, 159, 161, 0.6);
+}
+
+footer div.social div.iconos{
+    display: flex;
+    gap: 15px;
+}
+
+footer div.social div.iconos a i{
+    color: black;
+    font-size: 30px;
+    transition: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+}
+
+footer div.social div.iconos a i:hover{
+    font-size: 35px;
+}
+
+footer div.social div.contacto p{
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 
