@@ -33,7 +33,11 @@
         <h1>Haz de tu viaje una experiencia<br>inolvidable</h1>
         <div class="form">    
             <form action="index.html" method="post">
-                <input class="text" type="text" name="place" placeholder="Elige tu proximo destino">
+                <select name="place" id="place" class="destino">
+                    <option value="nul" selected disabled>Elige tu próximo destino</option>
+                    <option value="arg">Argentina</option>
+                    <option value="col">Colombia</option>
+                </select>
                 <input class="date" type="date" name="date">
                 <input class="button" type="submit" value="Buscar">
             </form>
@@ -48,19 +52,22 @@
             <video src="./img/Copia de WhatsApp Video 2021-11-05 at 11.29.28.mp4" autoplay muted loop></video>
         </div>
         <div id="propuestas" class="propuestas">
-            <h2>Propuesta de valor</h2>
+            <h2>¿Que ofrecemos?</h2>
             <div>
                 <article>
                     <img src="./img/Copia de Tripers.png" alt="">
-                    <h3>Valor Tripers</h3>
+                    <h3>Tripers</h3>
+                    <p>¡Empezá a viajar!</p>
                 </article>
-                <article>
+                <article class="to">
                     <img src="./img/Copia de touroperadores.png" alt="">
-                    <h3>Valor TO</h3>
+                    <h3>Tour Operadores</h3>
+                    <p>¡Crea tu cuenta!</p>
                 </article>
                 <article>
                     <img src="./img/Copia de hospedajes.png" alt="">
-                    <h3>Valor<br>Hospedajes</h3>
+                    <h3>Hospedajes</h3>
+                    <p>¡Contacta a nuestro equípo!</p>
                 </article>
             </div>
         </div>
